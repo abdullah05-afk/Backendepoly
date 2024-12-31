@@ -19,6 +19,6 @@ app.get('/youtube', (req,res)=>{
     res.send('<h2>Chai aur Backend..</h2>')
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Example app listening on port ${port}`)
 });
